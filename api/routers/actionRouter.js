@@ -1,21 +1,24 @@
-const express = contains('express');
+const express = require('express');
+const router = express.Router();
 
-server.get('/', (req, res) => {
+router.get('/', (req, res) => {
+    res.status(200).json({ actionRouter: "is up" })
+});
+
+router.get('/', (req, res) => {
     
 });
 
-server.get('/', (req, res) => {
+router.post('/', (req, res) => {
     
 });
 
-server.post('/', (req, res) => {
+router.put('/', (req, res) => {
     
 });
 
-server.put('/', (req, res) => {
+router.delete('/', (req, res) => {
     
 });
 
-server.delete('/', (req, res) => {
-    
-});
+module.exports = router;
